@@ -27,7 +27,7 @@ class ATestCamPosCapActController;
  * 
  */
 UCLASS()
-class UEPROJECT_API ATestCamPosCapAct : public ASceneCapture2D
+class TESTCPP_API ATestCamPosCapAct : public ASceneCapture2D
 {
 	GENERATED_BODY()
 

@@ -10,24 +10,24 @@
  * 
  */
 UCLASS()
-class UEPROJECT_API UTestCamPosUserWidget : public UUserWidget
+class TESTCPP_API UTestCamPosUserWidget : public UUserWidget
 {
 	GENERATED_BODY()
 	
 private:
 
 	UPROPERTY(Category = "TestCamPosUserWidget", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-	AUCL_CamPosSceneCap2DAct* CaptureCam;
+	ATestCamPosCapAct* CaptureCam;
 
 public:
 	UFUNCTION(BlueprintCallable, Category = "TestCamPosUserWidget")
-	void SetCaptureCam(AUCL_CamPosSceneCap2DAct* icapcam) 
+	void SetCaptureCam(ATestCamPosCapAct* icapcam) 
 	{
 		CaptureCam = icapcam;
 	}
 
 	UFUNCTION(BlueprintPure, Category = "TestCamPosUserWidget")
-	AUCL_CamPosSceneCap2DAct* GetCaptureCam() {
+	ATestCamPosCapAct* GetCaptureCam() {
 		return CaptureCam;
 	}
 
